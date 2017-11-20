@@ -3,7 +3,7 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := udp
+PROJECT_NAME := ESP32_BME280
 
 include $(IDF_PATH)/make/project.mk
 
