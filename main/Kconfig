@@ -1,0 +1,30 @@
+menu "Device Configuration"
+
+config BME280_SDA_PIN_NUMBER
+    int "BME280 SDA Pin Number"
+    default 21
+    range 0 34
+    help
+        BME280 SDA Pin Number.
+
+config BME280_SCL_PIN_NUMBER
+    int "BME280 SCL Pin Number"
+    default 22
+    range 0 34
+    help
+        BME280 SCL Pin Number.
+
+config BME280_DEVICE_ID
+    string "Device ID"
+    default "KIS02T67BN"
+    help
+        Device ID. Should be unique for every device.
+
+config NETWORK_PORT
+    int "Network Port"
+    default 16901
+    range 0 65535
+    help
+        Network port to use.
+
+endmenu
